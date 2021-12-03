@@ -4,7 +4,7 @@ let drpDay = document.getElementById('day')
 
 let xTime = null;
 
-let futureDateView = document.getElementById('future-date')
+let futureSateView = document.getElementById('future-date')
 let countdownView = document.getElementById('countdown')
 
 function generateYear(){
@@ -36,7 +36,7 @@ function generateDay(){
 function showDateForm(){
   
 
-  futureDateView.style.display = "block";
+  futureSateView.style.display = "block";
   countdownView.style.display = "none";
 
   generateYear()
@@ -67,7 +67,7 @@ function showCoundownTimer(){
   countdownView.style.display = "block";
   // Set the date we're counting down to
   let fd = new Date(window.localStorage.getItem('futureDate'))
-  console.log(fd, typeof fd)
+  
   // let countDownDate = new Date(fd.getFullYear(), fd.getMonth(), fd.getDay(), 0, 0, 0).getTime();
   let countDownDate = new Date(fd.getFullYear(), fd.getMonth(), fd.getDay(), 0, 0, 0).getTime();
 
@@ -105,6 +105,8 @@ function showCoundownTimer(){
   })
     
 }
+
+
 
 function init(){
   if(window.localStorage.getItem('futureDate') === null){

@@ -1,5 +1,9 @@
 body {
-    background-color: aqua;
+    background-image: url(images/christmas.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     color: black;
     font-size: 16px;
     font-family: sans-serif;
@@ -7,6 +11,11 @@ body {
     text-align: center;
     margin-top: 3rem;
     width: 90%;
+}
+
+.title {
+    color: rgb(137, 201, 158);
+    font-size: 24px;
 }
 
 select {
@@ -23,9 +32,17 @@ input {
     width: 50%;
     margin-top: 2rem;
     padding: 10px;
+    background-color: burlywood;
 }
 
 p {
     font-weight: 600;
 
+}
+
+#countdown {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgb(156, 214, 175);
+    margin-top: 6rem;
 }
