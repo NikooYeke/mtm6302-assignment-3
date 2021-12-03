@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="init()">
+
+    <div id="future-date">
+        <p>Enter your future Date</p>
+        <select name="year" id="year"></select>
+        <select name="month" id="month">
+            <option value="0">January</option>
+            <option value="1">February</option>
+            <option value="2">March</option>
+            <option value="3">April</option>
+            <option value="4">May</option>
+            <option value="5">june</option>
+            <option value="6">july</option>
+            <option value="7">Agust</option>
+            <option value="8">september</option>
+            <option value="9">october</option>
+            <option value="10">November</option>
+            <option value="11">December</option>
+        </select>
+        <select name="day" id="day"></select>
+        <div>
+            <input id='btnsetdate' type="button" value='Submit'>
+        </div>
+
+    </div>
+    <div id="countdown">
+        <span id="days"></span>
+        <span id="hours"></span>
+        <span id="mins"></span>
+        <span id="secs"></span>
+        <div>
+            <input id='btnreset' type="button" value='Reset Date'>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
